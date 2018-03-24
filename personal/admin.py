@@ -2,14 +2,7 @@
 from __future__ import unicode_literals
 
 from django.contrib import admin
-from .models import tipo, personal
-
-class tipoadmin(admin.ModelAdmin):
-        search_fields = ['nombre']
-        list_display = ('nombre','observacion','activo')
-        list_filter = ['activo','nombre']
-
-admin.site.register(tipo,tipoadmin)
+from .models import personal
 
 class personaladmin(admin.ModelAdmin):
         search_fields = ['email','nombres']
