@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'estructura',
     'personal',
     'requerimiento',
+    'asignacion',
 ]
 
 MIDDLEWARE = [

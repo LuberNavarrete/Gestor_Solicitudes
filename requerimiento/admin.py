@@ -13,7 +13,7 @@ admin.site.register(categoria,categoriaadmin)
 
 class tareaadmin(admin.ModelAdmin):
         search_fields = ['categoria']
-        list_display = ('categoria','descripcion','prioridad','completado','usuario','activo')
+        list_display = ('categoria','descripcion','estado','usuario','activo')
         list_filter = ['activo','categoria']
 
 admin.site.register(tarea,tareaadmin)
